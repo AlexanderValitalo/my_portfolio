@@ -46,6 +46,18 @@ body {
     color: rgb(197, 191, 191);
 }
 
+.my-work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    align-content: center;
+}
+
+.my-work-container-piece {
+    text-align: left;
+}
+
 .topnav {
     display: flex;
     flex-wrap: wrap;
@@ -78,13 +90,42 @@ body {
     width: 200px;
     object-fit: contain;
     border-radius: 20px;
-    border: 3px solid white;
+    border: 3px inset white;
 }
 
-.my-cv-h {
+.other-h1 {
     color: rgb(194, 194, 2);
 }
 
 #studying {
+    color: rgb(194, 194, 2);
+}
+
+.work-name {
+    color: rgb(197, 191, 191);
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    margin-bottom: 8px;
+}
+
+.work-img {
+    max-width: 300px;
+    border-radius: 5px;
+    border: 3px inset rgb(197, 191, 191);
+}
+
+.work-link {
+    text-decoration: none;
+    color: rgb(194, 194, 2);
+}
+
+.work-text {
+    color: rgb(197, 191, 191);
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+#my-mail {
     color: rgb(194, 194, 2);
 }
