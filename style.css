@@ -1,7 +1,9 @@
+/*Sätter bakgrundsfärgen till svart på sidan för en lugnare känsla*/
 body {
     background-color: rgb(14, 12, 12);
 }
 
+/*Fixar placeringen i sidled på huvudrubriken på index-sidan(Home-sidan)*/
 .index-container {
     display: flex;
     justify-content: center;
@@ -9,12 +11,14 @@ body {
     height: 70vh;
 }
 
+/*Fixar textens placering i höjdled, färg och centrering på index-sidan(Home-sidan)*/
 .index-container-h1 {
     margin: auto;
     color: rgb(197, 191, 191);
     text-align: center;
 }
 
+/*Sätter placeringen för divarna på about_me sidan så att de kan wrapas om det ej får plats på skärmen i sidled*/
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +26,7 @@ body {
     height: 100vh;
 }
 
+/*Sätter placeringen av divarna på about_me-sidan och ställer in texten*/
 .about-container-piece {
     margin: auto;
     color: rgb(197, 191, 191);
@@ -29,23 +34,28 @@ body {
     font-size: 20px;
 }
 
+/*Fixar textens placering för paragraferna på about_me-sidan*/
 .about-p {
     margin: 0;
 }
 
+/*Sätter texten med mitt namn i centrerat läge på about_me-sidan*/
 #my-name {
     text-align: center;
 }
 
+/*Ställer in placeringen av varje sektion i my_cv (Education, Work Experience och Awards and Certifications)*/
 .my-cv-container {
     display: flex;
     flex-direction: column;
 }
 
+/*Ställer in textens utseende i my_cv-sidan*/
 .my-cv-container-piece {
     color: rgb(197, 191, 191);
 }
 
+/*På stora skärmar(över 680px) så kommer detta att gälla som utseende för varje projekts div-placering*/
 .my-work-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,10 +64,12 @@ body {
     align-content: center;
 }
 
+/*Ställer in placeringen av texten för varje project*/
 .my-work-container-piece {
     text-align: left;
 }
 
+/*Ställer in hur menyn ska se ut och göra ifall menyalternativen inte får plats på en rad om t.ex. skärmbredden är liten*/
 .topnav {
     display: flex;
     flex-wrap: wrap;
@@ -73,19 +85,19 @@ body {
     font-size: 18px;
 }
 
-/*Ändra länkarnas utseende när man håller musen över dem*/
+/*Ändra länkarnas utseende i menyn när man håller musen över dem*/
 .topnav a:hover {
     text-decoration: underline;
     color: rgb(194, 194, 2);
 }
 
-/*Ändra utseende på den nuvarande aktiva länken*/
+/*Ändra utseende i menyn på den nuvarande aktiva länken*/
 .topnav a.active {
     text-decoration: underline;
     color: rgb(194, 194, 2);
 }
 
-/*Ändrar utseendet för personbilden*/
+/*Ändrar utseendet för personbilden i about_me*/
 .photo {
     width: 200px;
     object-fit: contain;
@@ -93,14 +105,17 @@ body {
     border: 3px inset white;
 }
 
+/*Ändrar färgen för huvudtiteln på CV-sidan*/
 .other-h1 {
     color: rgb(194, 194, 2);
 }
 
+/*Ändrar färgen för texten som talar om att jag studerar på CV-sidan*/
 #studying {
     color: rgb(194, 194, 2);
 }
 
+/*Ändrar utseende på namnet för varje projekt som jag gjort*/
 .work-name {
     color: rgb(197, 191, 191);
     font-size: 1.5rem;
@@ -108,17 +123,20 @@ body {
     margin-bottom: 8px;
 }
 
+/*Ändrar projektbildernas utseende*/
 .work-img {
     max-width: 300px;
     border-radius: 5px;
     border: 3px inset rgb(197, 191, 191);
 }
 
+/*Ändrar länken som går till Github repositoryts utseende*/
 .work-link {
     text-decoration: none;
     color: rgb(194, 194, 2);
 }
 
+/*Ändrar den beskrivande texten till varje projekts utseende*/
 .work-text {
     color: rgb(197, 191, 191);
     text-align: left;
@@ -126,11 +144,13 @@ body {
     margin-top: 4px;
 }
 
+/*Ändrar utseende på min mailtext på contact-sidan*/
 #my-mail {
     color: rgb(194, 194, 2);
     font-size: 1.2rem;
 }
 
+/*Fixar så att projekten hamnar rätt på my_work-sidan då det är en mindre skärm som exempelvis en telefon*/
 @media (max-width: 680px) {
     .my-work-container {
         align-content: start;
