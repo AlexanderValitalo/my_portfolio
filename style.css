@@ -128,4 +128,11 @@ body {
 
 #my-mail {
     color: rgb(194, 194, 2);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 680px) {
+    .my-work-container {
+        align-content: start;
+    }
 }
